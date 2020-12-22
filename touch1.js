@@ -1,4 +1,4 @@
-// 要素ら
+// 要素ら404
 
 var el_hitarea = document.getElementById('hitarea');
 var el_eventname = document.getElementById('eventname');
