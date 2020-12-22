@@ -2,8 +2,10 @@
     font-size:120%;
     font-family: 'MS Gothic';
     user-select: none;
-    -webkit-touch-callout:none; /* iOSのSafariで長押しによる選択を無効化 */
     box-sizing: border-box;
+}
+body {
+-webkit-touch-callout:none; /* リンク長押しのポップアップを無効化 */
 }
 #screen{
     border: solid 4px black;
