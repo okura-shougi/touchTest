@@ -8,11 +8,14 @@ var ctx = screenCanvas.getContext('2d');
 var canvasWidth = screenCanvas.getAttribute('width');
 var canvasHeight = screenCanvas.getAttribute('height');
 screenCanvas.addEventListener('touchstart', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
     drawPointer(e);
 }, false);
 screenCanvas.addEventListener('touchmove', function (e) {
     // タッチによる画面スクロールを止める
     e.preventDefault();
+    e.stopPropagation();
     drawPointer(e);
 }, false);
 screenCanvas.addEventListener('touchend', function (e) {
