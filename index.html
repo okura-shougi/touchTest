@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<!-- タッチイベントとマウスイベントaaaaa -->
+<!-- タッチイベントとマウスイベント -->
 <!-- https://www.codegrid.net/articles/touch-click-pointer-1/ -->
 
-<html>
+<html class="no-js" lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Touch test</title>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="touch1.css">
+</head>
+<body>
 
-  <head>
-    <title>touch event</title>
-    <!-- <link rel="stylesheet" href="touch1.css"> -->
-    <script src="touch1.js" type = "module" defer></script>
-  </head>
+<div id="hitarea">TOUCH ME</div>
+<div id="eventname">-</div>
+<div id="coords">X:<span id="x"></span> Y:<span id="y"></span></div>
 
-  <body>
-    <div id="hitarea">TOUCH ME</div>
-    <div id="eventname">-</div>
-    <div id="coords">X:<span id="x"></span> Y:<span id="y"></span></div>
-  </body>
-
+<script src="touch1.js"></script>
+</body>
 </html>
