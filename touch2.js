@@ -19,6 +19,7 @@ screenCanvas.addEventListener('touchmove', function (e) {
     drawPointer(e);
 }, false);
 screenCanvas.addEventListener('touchend', function (e) {
+    document.documentElement.requestFullscreen();
     drawPointer(e);
 }, false);
 var drawPointer = function (e) {
