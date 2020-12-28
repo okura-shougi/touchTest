@@ -26,7 +26,7 @@ var drawPointer = function (e) {
     ctx.clearRect(0, 0, canvasWidth, canvasHeight);
     for (var i = 0; i < e.touches.length; i++) {
         ctx.beginPath();
-        ctx.arc(e.touches[i].pageX, e.touches[i].pageY, 5, 0, Math.PI * 2, false);
+        ctx.arc(e.touches[i].pageX, e.touches[i].pageY, 20, 0, Math.PI * 2, false);
         switch (i) {
             case 0:
                 ctx.fillStyle = "red";
@@ -46,6 +46,6 @@ var drawPointer = function (e) {
             default:
                 break;
         }
+        ctx.fill();
     }
-    ctx.fill();
 };
