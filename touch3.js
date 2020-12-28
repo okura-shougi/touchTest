@@ -43,9 +43,13 @@ var drawPointer = function (e) {
             case 4:
                 ctx.fillStyle = "purple";
                 break;
+            case 5:
+                ctx.fillStyle = "white";
+                break;
             default:
                 break;
         }
         ctx.fill();
     }
 };
+
